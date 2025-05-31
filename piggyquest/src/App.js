@@ -3,9 +3,10 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  NavLink,
   Navigate,
 } from 'react-router-dom';
+import TopBar from './components/TopBar';
+import BottomNav from './components/BottomNav';
 import './App.css';
 
 // PUBLIC_INTERFACE
