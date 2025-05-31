@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './BottomNav.css';
 
 // Icon SVG paths or emoji for navigation (no external icons for lightweight build)
 const navItems = [
