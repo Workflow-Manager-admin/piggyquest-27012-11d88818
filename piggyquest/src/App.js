@@ -125,31 +125,9 @@ function App() {
   /** Main container with navigation and feature routes. */
   return (
     <Router>
-      <div className="app">
-        <nav className="navbar">
-          <div className="container" style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-            <div className="logo">
-              <span className="logo-symbol" role="img" aria-label="Piggy">🐷</span>
-              <span style={{ marginLeft: 4, fontWeight: 600 }}>PiggyQuest</span>
-            </div>
-            <div style={{ display: 'flex', gap: 16 }}>
-              {navLinks.map(link => (
-                <NavLink
-                  key={link.to}
-                  to={link.to}
-                  className={({ isActive }) =>
-                    isActive ? 'btn btn-large' : 'btn'
-                  }
-                  end={link.to === '/dashboard'}
-                  style={{ textDecoration: 'none', marginLeft: 4 }}
-                >
-                  {link.label}
-                </NavLink>
-              ))}
-            </div>
-          </div>
-        </nav>
-        <main style={{ marginTop: 96 }}>
+      <div className="app" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+        <TopBar />
+        <main style={{ paddingTop: 72, paddingBottom: 68, flex: 1 }}>
           <div className="container">
             <Routes>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
@@ -164,6 +142,7 @@ function App() {
             </Routes>
           </div>
         </main>
+        <BottomNav />
       </div>
     </Router>
   );
