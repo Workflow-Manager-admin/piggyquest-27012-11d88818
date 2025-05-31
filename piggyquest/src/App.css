@@ -1,9 +1,40 @@
 :root {
+  /* Brand Colors */
+  --color-primary: #1DE9B6;         /* Brand Teal */
+  --color-secondary: #FF6F61;       /* Brand Coral */
+  --color-accent-yellow: #FFD600;   /* Brand Yellow */
+  --color-accent-purple: #8E24AA;   /* Brand Purple */
+
+  /* Kavia colors - legacy/compat */
   --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
+  --kavia-dark: #181924;
+  --kavia-dark-alt: #22243a;
   --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --text-secondary: rgba(255, 255, 255, 0.74);
+  --border-color: rgba(255, 255, 255, 0.12);
+
+  /* Theme Surface & Components */
+  --surface-bg: var(--kavia-dark);
+  --surface-card: #26263b;
+  --surface-elevated: #2e2e46;
+
+  /* Utility + Misc */
+  --shadow-soft: 0 2px 12px 0 rgba(0,0,0,0.18), 0 1.5px 4px rgba(30,30,55,0.16);
+  --btn-radius: 20px;
+  --radius-xl: 20px;
+  --radius-xxl: 45px;
+  --nav-icon-bg: var(--color-accent-purple);
+
+  /* Avatar backgrounds (cycle for variety) */
+  --avatar-bg-pink: #FF6F61;
+  --avatar-bg-yellow: #FFD600;
+  --avatar-bg-teal: #1DE9B6;
+  --avatar-bg-purple: #8E24AA;
+  --avatar-border: #fff;
+
+  /* Other color helpers */
+  --success: #38ef7d;
+  --error: #e6556b;
 }
 
 body {
