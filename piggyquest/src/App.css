@@ -39,17 +39,30 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  background-color: var(--kavia-dark);
+  font-family: 'Fredoka', 'Baloo', 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background-color: var(--surface-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  letter-spacing: .01em;
+  font-size: 18px;
 }
 
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(135deg, var(--surface-bg) 90%, var(--color-primary) 100%);
+}
+
+/* Card style blocks throughout app */
+.card {
+  background: var(--surface-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  padding: 1.6rem 2.2rem;
+  margin: 1.3rem 0;
 }
 
 .navbar {
