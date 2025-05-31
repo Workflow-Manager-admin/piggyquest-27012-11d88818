@@ -137,13 +137,25 @@ body {
 }
 
 .hero {
-  padding-top: 120px;
-  padding-bottom: 64px;
+  padding-top: 110px;
+  padding-bottom: 62px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 26px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(29,233,182,0.11) 5%,
+    var(--surface-card) 70%
+  );
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 32px;
+  min-height: 340px;
+  transition: box-shadow 0.24s;
+  position: relative;
 }
 
 .subtitle {
