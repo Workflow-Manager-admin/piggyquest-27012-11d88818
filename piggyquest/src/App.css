@@ -159,24 +159,32 @@ body {
 }
 
 .subtitle {
-  color: var(--kavia-orange);
-  font-weight: 500;
-  font-size: 1.1rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 1.11rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+  text-shadow: 0px 2px 6px #1DE9B640;
 }
 
 .title {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: 3.2rem;
+  font-weight: 730;
+  line-height: 1.18;
   margin: 0;
+  font-family: 'Fredoka', 'Baloo', 'Inter', sans-serif;
+  letter-spacing: .01em;
+  color: #fff;
+  text-shadow: 2px 3px 15px #22243a30, 0px 1.5px 0px #FFD60014;
 }
 
 .description {
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 1.13rem;
+  line-height: 1.54;
   color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 16px;
+  max-width: 630px;
+  margin-bottom: 17px;
+  letter-spacing: .01em;
 }
 
 .btn {
