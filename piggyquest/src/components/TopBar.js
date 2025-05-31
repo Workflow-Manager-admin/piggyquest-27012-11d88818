@@ -1,5 +1,4 @@
 import React from 'react';
-import './TopBar.css';
 
 // PUBLIC_INTERFACE
 function TopBar() {
